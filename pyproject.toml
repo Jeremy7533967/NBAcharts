@@ -1,0 +1,21 @@
+[project]
+name = "NBAcharts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "celery>=5.5.3",
+    "pandas>=2.0.3",
+    "pymysql>=1.1.2",
+    "requests>=2.32.4",
+    "sqlalchemy<2.0.0",
+    "beautifulsoup4>=4.13.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["data_ingestion"]

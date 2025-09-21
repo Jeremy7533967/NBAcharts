@@ -1,0 +1,8 @@
+.venv/
+output/
+*.pyc
+.cache
+*.csv
+.env
+.env.example
+airflow/logs/
